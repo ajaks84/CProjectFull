@@ -1,0 +1,18 @@
+<div class="row minihdr">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<a ui-sref="countries">Countries</a> &lt; <span>{{factCtrl.country.name}}</span> | <span>Factories</span>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<factories ng-repeat="factory in factCtrl.factories"
+	factory="factory"
+	country="factCtrl.country">
+	</factories>
+</div>
+<hr>
+<div class="row">
+	<div class="col-md-6 col-sm-12 col-xs-12">
+		<button ui-sref="editor({params:factCtrl.factories, path:factCtrl.path, data:factCtrl})">Edit Factories List</button>
+	</div>
+</div>

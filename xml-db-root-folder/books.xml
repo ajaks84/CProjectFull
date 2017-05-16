@@ -1,0 +1,65 @@
+<com.epam.training.library2017.dao.xml.impl.wrapper.XmlModelWrapper>
+  <rows>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>1</id>
+      <title>new book1 from java</title>
+      <created>2017-04-10 16:51:51.217</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>2</id>
+      <title>new book2 from java</title>
+      <created>2017-04-10 16:51:51.217</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>3</id>
+      <title>new book3 from java</title>
+      <created>2017-04-10 16:51:51.217</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>4</id>
+      <title>new book from java</title>
+      <created>2017-04-10 16:53:14.65</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>5</id>
+      <title>new book1 from java</title>
+      <created>2017-04-10 16:56:53.202</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>6</id>
+      <title>new book2 from java</title>
+      <created>2017-04-10 16:56:53.202</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>7</id>
+      <title>new book3 from java</title>
+      <created>2017-04-10 16:56:53.202</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>9</id>
+      <title>new book1 from java</title>
+      <created>2017-04-10 17:03:15.961</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>10</id>
+      <title>new book2 from java</title>
+      <created>2017-04-10 17:03:15.961</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+    <com.epam.training.library2017.datamodel.Book>
+      <id>11</id>
+      <title>new book3 from java</title>
+      <created>2017-04-10 17:03:15.961</created>
+      <genre>fantasy</genre>
+    </com.epam.training.library2017.datamodel.Book>
+  </rows>
+  <lastId class="int">12</lastId>
+</com.epam.training.library2017.dao.xml.impl.wrapper.XmlModelWrapper>

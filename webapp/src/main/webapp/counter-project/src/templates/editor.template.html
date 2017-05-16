@@ -1,0 +1,62 @@
+<div class="row minihdr">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <a ui-sref="{{editorCtrl.path}}({params:editorCtrl.send})">Back to {{editorCtrl.path}}</a>
+    </div>
+</div>
+<hr>
+<div class="row ">
+    <div class="col-md-6 col-sm-6 col-xs-6" id="SMPGR">
+        <table class="table table-condensed"> <!-- table-striped -->
+        <thead>
+            <tr>
+                <td class="text-center" ng-repeat="field in editorCtrl.fields">{{field}}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="param in editorCtrl.params">
+                <td class="text-center" ng-repeat="field in param">{{field}}</td>
+                <td><a ng-click="setParam(param)" class="btn btn-small btn-primary">edit</a></td>
+                <td><a ng-click="deleteEntry(param)" class="btn btn-small btn-danger">delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<hr>
+<!-- </div ng-show="editorCtrl.entity=='Line'"> -->
+<!-- <div ng-show="editorCtrl.entity=='Line'" class="row"> -->
+<!-- <div class="{{editorCtrl.class}}" id="SMPGR"> -->
+<div class="row">
+<div class="col-md-6 col-sm-12 col-xs-12" id="normal">
+    <form ng-if="!editorCtrl.edit" class="form-horizontal" role="form" ng-submit="insertEntry()">
+        <div class="form-group">
+            <div class="col-md-6" >
+                <input ng-if="field!='id'" type="text" class="form-control" name="name" placeholder={{field}}
+                ng-model="editorCtrl.entry[field]"  ng-repeat="field in editorCtrl.fields" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <div style="padding-left:110px">
+                <input type="submit" value="Add new entry" ng-disabled="form.$invalid"  class="btn btn-primary"/>
+            </div>
+        </div>
+    </form>
+    <form ng-if="editorCtrl.edit" class="form-horizontal" role="form" ng-submit="editorCtrl.updateEntry()">
+        <div class="form-group">
+            <div class="col-md-6" ng-repeat="(key,field) in editorCtrl.editEntry">
+                <label>{{key}}</label>
+                <input type="text" class="form-control" value={{field}} ng-model="editorCtrl.editEntry[key]"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div style="padding-left:110px">
+                <input type="submit" value="Update selected entry" ng-disabled="form.$invalid" class="btn btn-primary"/>
+            </div>
+        </div>
+    </form>
+    <!-- </div ng-hide="editorCtrl.entity=='Line'"> -->
+</div>
+<!-- </div ng-show="editorCtrl.entity=='Line'"> -->
+</div>
+
+

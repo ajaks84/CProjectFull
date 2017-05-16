@@ -1,0 +1,42 @@
+<div class="row minihdr">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<a ui-sref="countries">Countries</a> &lt; <span>{{eRptCtrl.params.country.name}}</span> | <a ui-sref="factories({params:eRptCtrl.params})">Factories</a> &lt; <span>{{eRptCtrl.params.factory.name}}</span> | <a ui-sref="lines({params:eRptCtrl.params})">Lines</a> &lt; <span>{{eRptCtrl.params.line.name }}</span> | <a ui-sref="reports({params:eRptCtrl.params})">Reports</a> &lt; <span>{{eRptCtrl.report.date}}</span><span>#{{ eRptCtrl.report.shift}}</span>
+	</div>
+</div>
+<hr>
+<div class="row minihdr">
+	<div class="col-md-6 col-sm-6 col-xs-12">
+		<div id="wrap">
+			<div id="left_col">
+				<table style="width:50%">
+					<tr>
+						<th>Register:</th><td>{{eRptCtrl.report.register }}</td>
+					</tr>
+					<tr>
+						<th>Input:</th><td>{{eRptCtrl.report.input}}</td>
+					</tr>
+					<tr>
+						<th>Output:</th><td>{{eRptCtrl.report.output}}</td>
+					</tr>
+				</table>
+			</div>
+			<div id="right_col">
+				<table style="width:50%">
+					<consumption ng-repeat="consumption in eRptCtrl.consumptionList"
+					consumption="consumption"
+					>
+					</consumption>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="col-md-6 col-sm-12 col-xs-12">
+		<button ui-sref="editor({params:eRptCtrl.reports, path:eRptCtrl.path,data:eRptCtrl})">Add or Edit Report</button>
+	</div>
+	<div class="col-md-6 col-sm-12 col-xs-12">
+		<button ui-sref="editor({params:eRptCtrl.consumptionList, path:eRptCtrl.path,data:eRptCtrl})">Edit Report Consumption</button>
+	</div>
+</div>

@@ -1,0 +1,33 @@
+{
+   "Present_day_shift":{
+    "id":"1",
+    "name": "Day shift",
+    "duration_hr": "12",
+    "from_to": "7:00 - 19:00",
+    "date":"null"
+  },
+
+   "Present_night_shift":{
+    "id":"2",
+    "name": "Night shift",
+    "duration_hr": "12",
+    "from_to": "7:00 - 19:00",
+    "date":"null"
+  },
+
+   "Previous_day_shift":{
+    "id":"1",
+    "name": "Day shift",
+    "duration_hr": "12",
+    "from_to": "7:00 - 19:00",
+    "date":"null"
+  },
+
+   "Previous_night_shift":{
+    "id":"2",
+    "name": "Night shift",
+    "duration_hr": "12",
+    "from_to": "7:00 - 19:00",
+    "date":"null"
+  }
+}

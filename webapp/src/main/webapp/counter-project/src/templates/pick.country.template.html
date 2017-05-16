@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<span class = "minihdr">Countries</span>
+	</div>	
+</div>
+	<hr>
+<div class="row">
+ 	<countries ng-repeat="country in countriesCtrl.countries"
+           country="country">
+ 	</countries>
+</div>
+
+
+	<hr>
+<div class="row">
+ 	<div class="col-md-6 col-sm-12 col-xs-12">
+		<button ui-sref="editor({params:countriesCtrl.countries, path:countriesCtrl.path})">Edit Country List</button>
+	</div>
+</div>

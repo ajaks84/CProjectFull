@@ -1,0 +1,65 @@
+<div class="row minihdr">
+	<div class="col-md-12 col-sm-6 col-xs-12">
+		<a ui-sref="countries">Countries</a> &lt; <span>{{rptCtrl.country.name}}</span> | <a ui-sref="factories({params:rptCtrl})">Factories</a> &lt; <span>{{rptCtrl.factory.name}}</span> | <a ui-sref="lines({params:rptCtrl})">Lines</a> &lt; <span>{{rptCtrl.line.name}}</span>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="col-md-6 col-sm-6 col-xs-6 white_box">
+		<div>
+			<form name='regFormDate' novalidate>
+				<span class="report some_padding margin_1">Choose the date: </span>
+				<input ui-date="dateOptions"
+				required
+				as-date type="text"
+				class="text-center margin_1"
+				placeholder="today is:{{rptCtrl.curDayDate}}"
+				ng-model="pDate">
+			</form>
+		</div>
+		<div id="wrap">
+			<div id="left_col">
+				<span class="report some_padding"> Choose the shift: </span>
+			</div>
+			<div id="right_col">
+				<form name='regFormShift' class="margin_1" novalidate>
+					<input type="radio" ng-model="shift" value=1 ng-required="!shift"> 1 <br>
+					<input type="radio" ng-model="shift" value=2 ng-required="!shift"> 2 <br>
+					<input type="radio" ng-model="shift" value=3 ng-required="!shift"> 3 <br>
+				</form>
+			</div>
+		</div>
+		<div>
+			<button ng-click="getDataForReport();"
+			ui-sref="report({params:rptCtrl})"
+			ng-disabled="regFormDate.$invalid || regFormShift.$invalid"
+			>Get report</button>
+		</div>
+	</div>
+	<div class="col-md-6 col-sm-6 col-xs-12  verticalLine">
+		<div class="text-center report margin_1">Or choose from here:</div>
+		<div id="wrap">
+			<div id="left_col">
+				<shift-button ng-repeat = "shiftData in rptCtrl.currentShifts"
+				shift-data = "shiftData"
+				params = "rptCtrl"
+				date = "rptCtrl.curDayDate"
+				search = "false" >
+				</shift-button>
+			</div>
+			<div id="right_col">
+				<shift-button ng-repeat = "shiftData in rptCtrl.recentShifts"
+				shift-data = "shiftData"
+				params = "rptCtrl"
+				date = "rptCtrl.prvDayDate" 
+				search = "false">
+				</shift-button>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<div class="row report">
+	
+	<span>{{rptCtrl.line.name}} has been built in {{rptCtrl.line.buildYear}}. This line produces {{rptCtrl.line.speed}} {{rptCtrl.product.name}}'s {{rptCtrl.line.unit}}. Capacity is {{rptCtrl.line.capacity}} in a year.</span>
+</div>

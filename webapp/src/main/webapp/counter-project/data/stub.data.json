@@ -1,0 +1,37 @@
+{
+   "Present_day_shift":{
+    "input": "79834",
+    "output": "77367",
+    "from_to": "7:00 - 19:00",
+    "register":"5026",
+    "tab":"3,74",
+    "laquer":"2,89"
+  },
+
+   "Present_night_shift":{
+    "input": "78734",
+    "output": "76337",
+    "from_to": "19:00 - 7:00",
+    "register":"5026",
+    "tab":"3,71",
+    "laquer":"2,59"
+  },
+
+   "Previous_day_shift":{
+    "input": "78898",
+    "output": "77101",
+    "from_to": "7:00 - 19:00",
+    "register":"5025",
+    "tab":"3,54",
+    "laquer":"2,75"
+  },
+
+   "Previous_night_shift":{
+    "input": "79984",
+    "output": "77867",
+    "from_to": "19:00 - 7:00",
+    "register":"5025",
+    "tab":"3,85",
+    "laquer":"3,01"
+  }
+}

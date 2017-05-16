@@ -1,0 +1,94 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  height:1000px;
+  background-color: #0000ff;
+}
+
+#SMPGR {
+  float: center;
+  font-size: 2em;
+  color: white;
+}
+
+#normal {
+  float: center;
+  font-size: 1.6em;
+  color: white;
+}
+
+.navbar{
+  background-color: #3333ff;
+}
+
+button {
+  margin-left: 25%;
+  margin-bottom: 20px;
+  height: 70px;
+  width: 50%;
+  font-size: 16px;
+}
+
+.button {
+ 
+  width: 20%;
+}
+
+
+
+.minihdr{
+  font-size: 2em;
+  color: white;
+}
+
+.report{
+  color: white;
+}
+
+.report{
+  float: center;
+  font-size: 2em;
+  color: white;
+
+}
+
+.verticalLine {
+  border-left:  solid #ffffff;
+}
+
+#wrap {
+   width:600px;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:300px;
+}
+#right_col {
+   float:right;
+   width:300px;
+}
+
+.white_box {
+  border: #ffffff;
+}
+
+.some_padding {
+  padding: 20px;
+}
+ .margin_1{
+  margin-bottom: 20px;
+ }
+
+ table {
+    border-spacing: 5px;
+}
+
+th {
+    text-align: right;
+}
+
+th, td {
+    padding: 15px;
+}
+
+

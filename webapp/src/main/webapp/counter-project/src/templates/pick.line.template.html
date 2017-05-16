@@ -1,0 +1,19 @@
+<div class="row minihdr">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<a ui-sref="countries">Countries</a> &lt; <span>{{linesCtrl.country.name}}</span> | <a ui-sref="factories({params:linesCtrl})">Factories</a> &lt; <span>{{linesCtrl.factory.name}}</span> | <span>Lines</span>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<lines ng-repeat="line in linesCtrl.lines"
+		line="line"
+		country = "linesCtrl.country"
+		factory = "linesCtrl.factory">
+	</lines>
+</div>
+<hr>
+<div class="row">
+	<div class="col-md-6 col-sm-12 col-xs-12">
+		<button ui-sref="editor({params:linesCtrl.lines, path:linesCtrl.path,data:linesCtrl})">Edit Lines List</button>
+	</div>
+</div>
